@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lady Barber La China</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 30px 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', cursive;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.gold {
+  background: gold;
+  color: black;
+  font-weight: bold;
+}
+
+.copy {
+  background: #333;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Lady Barber La China</h1>
+  <div class="subtitle">Estilo • Precisión • Flow 🔥</div>
+
+  <div class="card">
+    <h2>E-Transfer 💳</h2>
+    <p id="email">Samalliruiz@gmail.com</p>
+
+    <button class="gold" onclick="copiar()">
+      Copiar correo
+    </button>
+  </div>
+
+</div>
+
+<script>
+function copiar() {
+  const texto = document.getElementById("email").innerText;
+  navigator.clipboard.writeText(texto);
+  alert("Correo copiado ✅");
+}
+</script>
+
+</body>
+</html>
